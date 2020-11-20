@@ -1,0 +1,18 @@
+<div>
+  <p>Bonjour <input type="text" [(ngModel)]="nom">,</p>
+  <button (click)="hello()">dis bonjour !</button><br/>
+ Vous avez indiqué :{{nomsaisi}}<br/>
+ Nb car : {{nomsaisi.length}}
+ <span *ngIf="nomsaisi ==='Zorro'">Yeah !</span><br/>
+ Liste des mots : {{listerMots()}}
+
+ <div>
+   3 premiers mots :
+   <ul>
+    <li *ngFor="let elt of listeMots() | slice:0:3" >{{elt}}</li>
+  </ul>
+</div>
+
+ <hello name={{nomsaisi}}></hello>
+ <date-pipe></date-pipe>
+</div>
