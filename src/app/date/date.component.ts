@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
  selector: 'date-pipe',
  template: `<div>
-   <p>Today is {{today | date}}</p>
-   <p>Or if you prefer, {{today | date:'fullDate'}}</p>
-   <p>The time is {{today | date:'h:mm a z'}}</p>
+   <p>On est le {{today | date}}</p>
+   <p>Ou, si vous préférez, le {{today | date:'fullDate'}}</p>
+   <p>Il est {{today | date:'H:mm'}}</p>
  </div>`
 })
 // Get the current date and time as a date-time value.
